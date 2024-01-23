@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  background-color: rgb(255, 255, 255);
+}
+header .sellingContainer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .sellingContainer .sellingText p {
+  font-weight: 900;
+  font-size: 40px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: 48px;
+  text-decoration: none;
+  transform: none;
+  letter-spacing: 0;
+}
+header .sellingContainer .sellingText p span {
+  font-weight: 900;
+  font-size: 40px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: 48px;
+  text-decoration: none;
+  transform: none;
+  color: rgb(241, 104, 33);
+}
+header .sellingContainer .sellingList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .sellingContainer .sellingList ul {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+header .sellingContainer .sellingList ul a {
+  text-decoration: none;
+}
+header .sellingContainer .sellingList ul a li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 27.2px;
+  text-decoration: none;
+  transform: none;
+  font-family: Muli;
+  letter-spacing: 0;
+  color: black;
+}
+header .sellingContainer .dropdown {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  header .sellingContainer .sellingList {
+    display: none;
+  }
+  header .sellingContainer .dropdown {
+    display: block;
+  }
+  header .sellingContainer .dropdown-menu a {
+    text-decoration: none;
+  }
+  header .sellingContainer .dropdown-menu a li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 27.2px;
+    text-decoration: none;
+    transform: none;
+    font-family: Muli;
+    letter-spacing: 0;
+    color: black;
+  }
+}
+#myFormMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+#myFormMain #myForm {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border: 3px solid rgb(241, 104, 33);
+  border-radius: 30px;
+  min-height: 400px;
+}
+#myFormMain #myForm h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+#myFormMain #myForm input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+#myFormMain #myForm button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: gray;
+  border-radius: 20px;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#sortSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sortSection .dropdown {
+  min-height: 100px;
+}
+#sortSection .dropdown .dropdown-menu {
+  padding: 0 10px;
+}
+#sortSection .dropdown .dropdown-menu button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: gray;
+}
+#sortSection .searchMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+#sortSection .searchMain #searchInput {
+  width: 200px;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  border: 1px solid grey;
+  font-size: 15px;
+  font-weight: 700px;
+  padding-left: 10px;
+}
+#sortSection .searchMain #searchButton {
+  width: 70px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: gray;
+  border: none;
+}
+
+#tableMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tableMain #tables {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(199, 199, 199);
+}
+#tableMain #tables .myDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+#tableMain #tables .myDiv td {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+#tableMain #tables .myDiv td img {
+  width: 30%;
+}
+#tableMain #tables .myDiv td button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(241, 104, 33);
+}
+#tableMain #tables .myDiv td h1 {
+  font-size: 20px;
+}
+#tableMain #tables .myDiv td p {
+  font-size: 20px;
+}
